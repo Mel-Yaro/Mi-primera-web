@@ -1,0 +1,25 @@
+body {
+    background-color: rgb(227, 204, 168);
+    color: rgb(47, 2, 131)
+}
+
+img {
+    width: 400;
+    height: auto;
+}
+
+p {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.enfasis {
+
+    font-weight: 200;
+}
+
+#final {
+
+    font-size: large;
+}
+
+
