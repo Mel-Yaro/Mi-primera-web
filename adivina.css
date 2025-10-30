@@ -1,0 +1,185 @@
+:root {
+    --colorcejas: rgb(33, 19, 0);
+    --colorpiel: rgb(192, 124, 72);
+    --colormancha: rgb(252, 248, 226);
+    --colornariz: rgb(250, 65, 48);
+}
+
+body {
+    background-color: rgb(32, 1, 111);
+    color: rgb(244, 224, 169);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#lienzo {
+    width: 1000px;
+    height: 1000px;
+    margin: 40px;
+    border:3px rgb(244, 224, 169) solid;
+    background-color: rgb(32, 1, 111);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#pelo {
+    border-radius: 50%;
+    
+    width: 30%;
+    height: 30%;
+    border:3px var(--colorcejas)solid;
+    background-color: var(--colorcejas);
+    left: 65%; 
+   top: 20%;
+
+}
+
+#cara {
+    border-radius: 40%;
+    
+    width: 50%;
+    height: 50%;
+    border:3px var(--colorpiel) solid;
+    background-color: var(--colorpiel);
+    position: relative;
+
+}
+.cejas {
+    border-radius: 50%;
+    
+    width: 20%;
+    height: 10%;
+    border:3px var(--colorcejas)solid;
+    background-color: var(--colorcejas);
+    position: absolute;
+
+}
+#ceja1 {
+   left: 65%; 
+   top: 20%;
+transform: rotate(15deg);
+}
+#ceja2 {
+   left: 15%; 
+    top: 20%;
+transform: rotate(-15deg);
+}
+
+.taparcejas {
+    border-radius: 50%;
+    
+    width: 20%;
+    height: 10%;
+    border:3px var(--colorpiel)solid;
+    background-color: var(--colorpiel);
+    position: absolute;
+
+}
+#tapaceja1 {
+   left: 65%; 
+   top: 25%;
+transform: rotate(15deg);
+}
+#tapaceja2 {
+   left: 15%; 
+    top: 25%;
+transform: rotate(-15deg);
+}
+.manchaojo {
+    border-radius: 50%;
+    
+    width: 30%;
+    height: 35%;
+    border:3px var(--colormancha)solid;
+    background-color: var(--colormancha);
+    position: absolute;
+
+}
+#manchaojo1 {
+   left: 55%; 
+   top: 30%;
+
+}
+#manchaojo2 {
+   left: 15%; 
+    top: 30%;
+
+}
+.ojo {
+    border-radius: 50%;
+    
+    width: 10%;
+    height: 15%;
+    border:3px var(--colorcejas)solid;
+    background-color: var(--colorcejas);
+    position: absolute;
+
+}
+#ojo1 {
+   left: 65%; 
+   top: 40%;
+
+}
+#ojo2 {
+   left: 25%; 
+    top: 40%;
+
+}
+.taparojo {
+    border-radius: 50%;
+    
+    width: 9%;
+    height: 15%;
+    border:3px var(--colormancha)solid;
+    background-color: var(--colormancha);
+    position: absolute;
+    top: 43%;
+
+}
+#tapaojo1 {
+   left: 66%; 
+   
+
+}
+#tapaojo2 {
+   left: 25%; 
+   
+
+}
+
+.cachete{
+    border-radius: 50%;
+    
+    width: 30%;
+    height: 20%;
+    border:3px var(--colorpiel)solid;
+    background-color: var(--colorpiel);
+    position: absolute;
+
+}
+#cachete1 {
+   left: 55%; 
+   top: 60%;
+transform: rotate(-15deg);
+}
+#cachete2 {
+   left: 15%; 
+    top: 60%;
+transform: rotate(15deg);
+}
+
+#nariz {
+    border-radius: 50%;
+    
+    width: 20%;
+    height: 20%;
+    border:5px var(--colornariz) solid;
+    background-color: var(--colornariz);
+    position: relative;
+    left: 40%; 
+   top: 50%;
+}
