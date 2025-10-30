@@ -1,0 +1,59 @@
+body {
+    background-color: rgb(222, 157, 250);
+    color: rgb(244, 224, 169);
+}
+
+#lienzo {
+    width: 600px;
+    height: 600px;
+    border:3px rgb(244, 224, 169) solid;
+    background-color: rgb(242, 213, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+#cara {
+    border-radius: 50%;
+    
+    width: 60%;
+    height: 60%;
+    border:3px rgb(252, 255, 50) solid;
+    background-color: rgb(226, 255, 39);
+    position: relative;
+
+}
+.ojo {
+    border-radius: 50%;
+    
+    width: 20%;
+    height: 20%;
+    border:3px rgb(209, 109, 252) solid;
+    background-color: rgb(222, 157, 250);
+    position: absolute;
+
+}
+#ojo1 {
+   left: 60%; 
+   top: 30%;
+
+}
+#ojo2 {
+   left: 20%; 
+    top: 30%;
+
+}
+
+#sonrisa {
+    border-radius: 50%;
+    overflow: hidden: 50%;
+    width: 40%;
+    height: 20%;
+    border:5px rgb(209, 109, 252) solid;
+    background-color: rgb(222, 157, 250);
+    position: relative;
+    left: 30%; 
+   top: 60%;
+}
