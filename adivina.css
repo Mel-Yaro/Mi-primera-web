@@ -1,13 +1,20 @@
 :root {
-    --colorcejas: rgb(33, 19, 0);
-    --colorpiel: rgb(192, 124, 72);
-    --colormancha: rgb(252, 248, 226);
-    --colornariz: rgb(250, 65, 48);
-}
+    --colorcejas: rgb(5, 7, 30);
+    --colorpiel: rgb(254, 236, 198);
+    --colormancha: rgb(251, 223, 40);
+    --colornariz: rgb(248, 21, 0);
+    --colorojo: rgb(5, 7, 30);
+     --colortapaojo: rgba(116, 161, 234, 0);
+      --colorrombo: rgb(116, 162, 234);
+    --colorcachete: rgb(255, 71, 144);
+    --colorropa: rgb(251, 223, 40);
+    --colorropa1:rgb(251, 167, 40);
+
+} 
 
 body {
-    background-color: rgb(32, 1, 111);
-    color: rgb(244, 224, 169);
+    background-color: rgb(254, 236, 198);
+    color: rgb(5, 7, 30);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -18,25 +25,99 @@ body {
     width: 1000px;
     height: 1000px;
     margin: 40px;
-    border:3px rgb(244, 224, 169) solid;
-    background-color: rgb(32, 1, 111);
+    border:3px rgb(251, 223, 40)solid;
+    background-color: rgb(116, 162, 234);
     display: flex;
     justify-content: center;
     align-items: center;
+     position: relative;
 
 }
 
-#pelo {
+#ropa {
+    border-radius: 30%;
+    
+    width: 60%;
+    height: 30%;
+    border:3px var(--colorcachete) solid;
+    background-color: var(--colorcachete);
+    position: absolute;
+     left: 20%;
+     top: 70%;
+
+}
+.pliegue {
     border-radius: 50%;
     
-    width: 30%;
-    height: 30%;
-    border:3px var(--colorcejas)solid;
-    background-color: var(--colorcejas);
-    left: 65%; 
-   top: 20%;
+    width: 40%;
+    height: 40%;
+    
+    position: absolute;
 
 }
+#pliegue1 {
+    transform: rotate(0deg);
+    border:3px var(--colorropa)solid;
+    background-color: var(--colorropa);
+}
+#pliegue2 {
+    left:10% ;
+    transform: rotate(-25deg);
+    border:3px var(--colorropa1)solid;
+    background-color: var(--colorropa1);
+   
+}
+#pliegue3 {
+    left:20%;
+    
+     transform: rotate(-45deg);
+    border:3px var(--colorropa)solid;
+    background-color: var(--colorropa);
+}
+#pliegue4 {
+    left: 60%;
+    transform: rotate(0deg);
+    border:3px var(--colorropa)solid;
+    background-color: var(--colorropa);
+}
+#pliegue5 {
+    left:50% ;
+    transform: rotate(25deg);
+    border:3px var(--colorropa1)solid;
+    background-color: var(--colorropa1);
+   
+}
+#pliegue6 {
+    left:40%;
+    
+     transform: rotate(45deg);
+    border:3px var(--colorropa)solid;
+    background-color: var(--colorropa);
+}
+.boton {
+    border-radius: 50%;
+    
+    width: 10%;
+    height: 10%;
+    
+    position: absolute;
+
+}
+#boton1 {
+    left: 45%;
+    top: 50%;
+    border:3px var(--colorrombo)solid;
+    background-color: var(--colorrombo);
+}
+#boton2 {
+    left: 45%;
+    top: 70%;
+    border:3px var(--colorrombo)solid;
+    background-color: var(--colorrombo);
+}
+
+
+
 
 #cara {
     border-radius: 40%;
@@ -47,6 +128,51 @@ body {
     background-color: var(--colorpiel);
     position: relative;
 
+   
+
+}
+
+.pelo {
+    border-radius: 50%;
+    
+    width: 40%;
+    height: 40%;
+    border:3px rgb(248, 21, 0)solid;
+    background-color: rgb(248, 21, 0);
+    position: absolute;
+
+}
+#pelo1 {
+   left: -20%; 
+   top: -10%;
+}
+#pelo2 {
+   left: -30%; 
+    top: 20%;
+}
+#pelo3 {
+   left: 30%; 
+    top: -20%;
+}
+#pelo4 {
+   left: -3%; 
+    top: -30%;
+}
+#pelo5 {
+   left: 80%; 
+   top: -10%;
+}
+#pelo6 {
+   left: 90%; 
+    top: 20%;
+}
+#pelo7 {
+   left: 30%; 
+    top: -40%;
+}
+#pelo8 {
+   left: 63%; 
+    top: -30%;
 }
 .cejas {
     border-radius: 50%;
@@ -112,64 +238,102 @@ transform: rotate(-15deg);
 .ojo {
     border-radius: 50%;
     
-    width: 10%;
-    height: 15%;
-    border:3px var(--colorcejas)solid;
-    background-color: var(--colorcejas);
+    width: 11%;
+    height: 11%;
+    border:3px var(--colorojo)solid;
+    background-color: var(--colorojo);
     position: absolute;
 
 }
 #ojo1 {
    left: 65%; 
-   top: 40%;
+   top: 43%;
 
 }
 #ojo2 {
    left: 25%; 
-    top: 40%;
+    top: 43%;
 
 }
 .taparojo {
     border-radius: 50%;
     
-    width: 9%;
-    height: 15%;
-    border:3px var(--colormancha)solid;
-    background-color: var(--colormancha);
+    width: 14%;
+    height: 10%;
+    border:3px var(--colortapaojo)solid;
+    background-color: var(--colortapaojo);
     position: absolute;
     top: 43%;
 
 }
 #tapaojo1 {
-   left: 66%; 
+   left: 64%; 
    
 
 }
 #tapaojo2 {
-   left: 25%; 
+   left: 24%; 
    
 
+}
+
+.rombo{
+  width: 20%;
+  height: 20%;
+  background-color: var(--colorrombo);
+  transform: rotate(45deg) skew(30deg,30deg);
+  position: absolute;
+}
+#rombo1 {
+   left: 21%; 
+   top:38%
+}
+#rombo2 {
+   left: 61%; 
+   top:38%
 }
 
 .cachete{
     border-radius: 50%;
     
-    width: 30%;
+    width: 25%;
     height: 20%;
-    border:3px var(--colorpiel)solid;
-    background-color: var(--colorpiel);
+    border:3px var(--colorcachete)solid;
+    background-color: var(--colorcachete);
     position: absolute;
 
 }
 #cachete1 {
-   left: 55%; 
+   left: 72%; 
    top: 60%;
 transform: rotate(-15deg);
 }
 #cachete2 {
-   left: 15%; 
+   left: 3%; 
     top: 60%;
 transform: rotate(15deg);
+}
+#boca {
+    border-radius: 50%;
+    
+    width: 40%;
+    height: 20%;
+    border:5px var(--colornariz) solid;
+    background-color: var(--colornariz);
+    position: absolute;
+    left: 30%; 
+   top: 70%;
+}
+#tapaboca {
+    border-radius: 50%;
+    
+    width: 40%;
+    height: 10%;
+    border:5px var(--colorpiel) solid;
+    background-color: var(--colorpiel);
+    position: absolute;
+    left: 30%; 
+   top: 70%;
 }
 
 #nariz {
@@ -179,7 +343,7 @@ transform: rotate(15deg);
     height: 20%;
     border:5px var(--colornariz) solid;
     background-color: var(--colornariz);
-    position: relative;
+    position: absolute;
     left: 40%; 
    top: 50%;
 }
