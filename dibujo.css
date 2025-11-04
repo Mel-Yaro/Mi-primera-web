@@ -40,6 +40,10 @@ body {
    top: 30%;
 
 }
+#ojo1:hover{
+    background-color: rgb(0, 0, 0);
+}
+
 #ojo2 {
    left: 20%; 
     top: 30%;

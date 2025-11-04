@@ -12,6 +12,16 @@
 
 } 
 
+@keyframes colorPelo {
+    0% {background-color: rgb(248, 21, 0);}
+    50% {background-color: rgb(255, 221, 0);}
+    100% {background-color: rgb(248, 21, 0);}  
+}
+
+
+
+
+
 body {
     background-color: rgb(254, 236, 198);
     color: rgb(5, 7, 30);
@@ -137,9 +147,12 @@ body {
     
     width: 40%;
     height: 40%;
-    border:3px rgb(248, 21, 0)solid;
+    border:3px rgb(248, 21, 0);
     background-color: rgb(248, 21, 0);
     position: absolute;
+    animation-name: colorPelo;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
 
 }
 #pelo1 {
@@ -258,23 +271,34 @@ transform: rotate(-15deg);
 .taparojo {
     border-radius: 50%;
     
-    width: 14%;
+    width: 10%;
     height: 10%;
-    border:3px var(--colortapaojo)solid;
-    background-color: var(--colortapaojo);
+   
     position: absolute;
-    top: 43%;
+    top: 42%;
 
 }
-#tapaojo1 {
-   left: 64%; 
-   
 
+#tapaojo1 {
+   left: 65%;
+   border:3px rgba(5, 7, 30, 0)solid;
+    background-color: rgba(5, 7, 30, 0);
+
+}
+#tapaojo1:hover {
+    border:3px rgb(116, 162, 234)solid;
+    background-color: rgb(116, 162, 234);
 }
 #tapaojo2 {
-   left: 24%; 
-   
+   left: 26%; 
+   border:3px rgba(5, 7, 30, 0)solid;
+    background-color: rgba(5, 7, 30, 0);
 
+}
+
+#tapaojo2:hover {
+    border:3px rgb(116, 162, 234)solid;
+    background-color: rgb(116, 162, 234);
 }
 
 .rombo{
@@ -317,7 +341,7 @@ transform: rotate(15deg);
     border-radius: 50%;
     
     width: 40%;
-    height: 20%;
+    height: 15%;
     border:5px var(--colornariz) solid;
     background-color: var(--colornariz);
     position: absolute;
@@ -329,11 +353,20 @@ transform: rotate(15deg);
     
     width: 40%;
     height: 10%;
-    border:5px var(--colorpiel) solid;
+    border:5px var(--colorpiel);
     background-color: var(--colorpiel);
     position: absolute;
-    left: 30%; 
+    left: 31%; 
    top: 70%;
+}
+#tapaboca:hover {
+    background-color: var(--colornariz);
+}
+
+@keyframes narizLoca {
+    0% {background-color: rgb(248, 21, 0);  width: 20%;height: 20%;left: 40%; top: 50%;}
+    50% {background-color: rgb(255, 71, 144); width: 10%;height: 10%;left: 45%;top: 55%;}
+    100% {background-color: rgb(248, 21, 0);  width: 20%;height: 20%;left: 40%;top: 50%;}
 }
 
 #nariz {
@@ -341,9 +374,12 @@ transform: rotate(15deg);
     
     width: 20%;
     height: 20%;
-    border:5px var(--colornariz) solid;
+    border:5px var(--colornariz);
     background-color: var(--colornariz);
     position: absolute;
     left: 40%; 
    top: 50%;
+    animation-name: narizLoca;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
 }
